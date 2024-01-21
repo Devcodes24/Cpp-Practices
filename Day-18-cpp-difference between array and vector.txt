@@ -1,3 +1,5 @@
+Difference between vector and array.
+
 
 1. Size and Dynamic Allocation:
    Array: The size of an array is fixed at the time of declaration, and it cannot be changed during runtime. Arrays in C++ are static and have a fixed size.
