@@ -1,0 +1,16 @@
+Most of the important topics DSA for placements-
+
+1. Array{Playing with it}
+2.Recursion{many common problems}
+3.Trees{Traversing ,actions}
+4.Linked list
+5. Searching algo
+6.Dynamic😊
+7. Greedy algo
+
+
+
+
+
+
+For fun😉
