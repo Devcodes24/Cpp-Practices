@@ -1,0 +1,15 @@
+When to Use a Backtracking Algorithm?
+
+There are the following scenarios in which you can use the backtracking:
+
+It is used to solve a variety of problems. You can use it, for example, to find a feasible solution to a decision problem.
+Backtracking algorithms were also discovered to be very effective for solving optimization problems.
+In some cases, it is used to find all feasible solutions to the enumeration problem.
+Backtracking, on the other hand, is not regarded as an optimal problem-solving technique. It is useful when the solution to a problem does not have a time limit.
+Following an example of a backtracking algorithm, you will now look at different types.
+
+Types of Backtracking Algorithm 
+Backtracking algorithms are classified into two types:
+
+Algorithm for recursive backtracking
+Non-recursive backtracking algorithm
