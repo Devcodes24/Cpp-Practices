@@ -1,0 +1,10 @@
+Importants for heap complexities :
+
+1. Making heap using insertion of each elements: O(nlogn);
+2. using heap: O(n)
+
+3. Insertion in a heap: O(logn);
+4. Deletion: O(logn);
+5. Decreasing : O(logn);
+
+6. Find: O(n)
