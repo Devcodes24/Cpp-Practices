@@ -9,6 +9,7 @@ Searching Algorithms:
 
 Linear Search: O(n)
 Binary Search: O(log n)
+
 Graph Algorithms:
 
 Breadth-First Search (BFS): O(V + E) where V is the number of vertices and E is the number of edges.
@@ -22,10 +23,12 @@ Fibonacci (naive recursion): O(2^n) - exponential
 Fibonacci (dynamic programming): O(n)
 Longest Common Subsequence (LCS): O(mn) where m and n are the lengths of the two sequences
 Knapsack Problem: O(nW), where n is the number of items and W is the capacity of the knapsack.
+
 Greedy Algorithms:
 
 Kruskal's Algorithm (for Minimum Spanning Tree): O(E log V) where E is the number of edges and V is the number of vertices.
 Prim's Algorithm (for Minimum Spanning Tree): O(V^2) with an adjacency matrix, O(E + V log V) with an adjacency list.
+
 Divide and Conquer:
 
 Strassen's Matrix Multiplication: O(n^log2(7)) - approximately O(n^2.81)
