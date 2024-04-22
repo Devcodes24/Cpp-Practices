@@ -1,0 +1,67 @@
+#include <iostream>
+#include <vector>
+#include <list>
+using namespace std;
+
+
+class Hashing{
+    
+    vector<list<int>> hashtable ;
+    int bucket;
+public:
+
+
+    Hashing(int size){
+        bucket=size;
+        hashtable.resize(size);
+        
+        
+    }
+    
+   
+    
+    int hashvalue(int key){
+        return key%bucket;
+        
+    }
+    
+    int addKey(int key){
+        int indx=hashvalue(key);
+        hashtable[indx].push_back(key);
+        
+    }
+    
+    list<int>::iterator search(int key){
+        int indx=hashvalue(key);
+        return find(hashtable[indx].begin(),hashtable[indx].end(),key);
+    }
+    
+    int deleteKey(int key){
+        int indx=hashvalue(key);
+        if(search(key)!=hashtable[indx].end()){
+            hashtable[indx].erase(search(key));
+            cout<<key<<"is deleted succesfully";
+        }
+        else{
+            cout<<key<<"is not present";
+        }
+        
+        
+    }
+    
+    
+};
+
+
+int main()
+{
+    Hashing h(10);
+    h.addKey(3);
+    h.addKey(7);
+    h.addKey(5);
+    
+    h.deleteKey(7);
+    
+
+    return 0;
+}
