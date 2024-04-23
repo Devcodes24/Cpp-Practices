@@ -1,0 +1,27 @@
+
+#include <iostream>
+#include <vector>
+#include <map>
+using namespace std;
+
+
+
+
+int main()
+{
+cout<<"Hello World";
+map<string,int> m;
+m["harsh"]=4;
+m["yash_babu"]=1;
+m["jyoti_di"]=2;
+m["pooja_di"]=3;
+
+for(auto itr:m){
+    //m.erase("jyoti_di");
+    cout<<itr.first<<" "<<itr.second<<endl;
+}
+
+//also look for "how to use iterator here map<int,int>::iterator itr         ->"
+
+return 0;
+}
