@@ -1,0 +1,48 @@
+#include <iostream>
+#include <unordered_map>
+
+using namespace std;
+
+
+bool check_anagram(string s1,string s2){
+    unordered_map<char,int> m;
+    if(s1.length()!=s2.length()){
+        return false;
+    }
+    
+    for(auto ele1:s1){
+        m[ele1]++;
+        
+    }
+    for(auto ele2:s2){
+        if(m.find(ele2)==m.end()){
+            return false;
+        }
+        else{
+            m[ele2]--;
+        }
+    }
+    
+    for (auto ele:m){
+        if(ele.second!=0){
+            return false;
+        }
+        
+    }
+    return true;
+    
+    
+}
+
+
+
+
+
+int main()
+{
+    string s1,s2;
+    cin>> s1>> s2;
+    cout<<(check_anagram(s1,s2)?"Anagram":"Not an Anagram")<<endl;
+
+    return 0;
+}
